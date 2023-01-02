@@ -7,12 +7,10 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   showPara = false;
-  count = 0;
   logs = [];
 
   onButtonClick() {
     this.showPara = !this.showPara;
-    this.count++;
-    this.logs.push(this.count);
+    this.logs.push(this.logs.length+1);
   }
 }

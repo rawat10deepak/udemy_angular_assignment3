@@ -4,7 +4,7 @@
 <div *ngFor="let log of logs">
   <div
     [ngStyle]="{ background: log < 5 ? '' : 'blue' }"
-    [ngClass]="{ moreThanFifth: log >= '5' }"
+    [ngClass]="{ 'white-text': log >= '5' }"
   >
     {{ log }}
   </div>
