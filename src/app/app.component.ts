@@ -11,6 +11,6 @@ export class AppComponent {
 
   onButtonClick() {
     this.showPara = !this.showPara;
-    this.logs.push(this.logs.length+1);
+    this.logs.push(new Date());
   }
 }

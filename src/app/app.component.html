@@ -1,10 +1,10 @@
 <button (click)="onButtonClick()">Display Details</button>
 <p *ngIf="showPara">pasword = 'tuna'</p>
 
-<div *ngFor="let log of logs">
+<div *ngFor="let log of logs; let i = index">
   <div
-    [ngStyle]="{ background: log < 5 ? '' : 'blue' }"
-    [ngClass]="{ 'white-text': log >= '5' }"
+    [ngStyle]="{ background: i >= 4 ? 'blue' : 'transparent' }"
+    [ngClass]="{ 'white-text': i >= 4 }"
   >
     {{ log }}
   </div>
