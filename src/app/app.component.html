@@ -1,4 +1,11 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<button (click)="onButtonClick()">Display Details</button>
+<p *ngIf="showPara">pasword = 'tuna'</p>
+
+<div *ngFor="let log of logs">
+  <div
+    [ngStyle]="{ background: log < 5 ? '' : 'blue' }"
+    [ngClass]="{ moreThanFifth: log >= '5' }"
+  >
+    {{ log }}
+  </div>
+</div>
